@@ -1,42 +1,30 @@
-# System Calls in C++
+# Applied Operating System
 
-This repository contains a practical implementation of system calls related to process management in operating systems, written in C++. The key system calls covered are:
-
-- **`fork()`**: Creates a new process by duplicating the calling process.
-- **`exec()`**: Replaces the current process image with a new program.
-- **`wait()`**: Makes the parent process wait for the child process to finish execution.
+This repository is a collection of practical implementations and examples related to core topics in operating systems, with a focus on systems programming and process management. It includes various topics that demonstrate key concepts such as system calls, process management, file systems, memory management, concurrency, and more.
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [System Calls Covered](#system-calls-covered)
-3. [Code Example](#code-example)
-4. [How It Works](#how-it-works)
-5. [Running the Code](#running-the-code)
 
-## Introduction
+1. [System Calls](#system-calls)
+2. [Process Management](#process-management)
+3. [Memory Management](#memory-management)
+4. [Concurrency](#concurrency)
+5. [File Systems](#file-systems)
+6. [Synchronization](#synchronization)
+7. [Future Topics](#future-topics)
 
-In operating systems, **system calls** provide an interface for applications to interact with the OS kernel. Key system calls related to process management include:
+## System Calls
+
+In operating systems, **system calls** provide an interface between user programs and the operating system. Key system calls related to process management include:
 
 - **`fork()`**: Creates a new process by duplicating the calling process.
-- **`exec()`**: Replaces the current process with a new program.
-- **`wait()`**: Makes the parent process wait until its child process terminates.
+- **`exec()`**: Replaces the current process image with a new one.
+- **`wait()`**: Makes the parent process wait for the child process to finish execution.
 
-These system calls are fundamental for process creation, management, and inter-process communication in many OS environments.
+This section provides an implementation of the **`fork()`**, **`exec()`**, and **`wait()`** system calls to demonstrate their usage.
 
-## System Calls Covered
+### Code Example
 
-### 1. **fork()**
-The **`fork()`** system call creates a new process by duplicating the calling process. After calling `fork()`, both the parent and child processes will continue executing the code following the `fork()`. It returns a value of `0` in the child process and the child’s PID in the parent process.
-
-### 2. **exec()**
-The **`exec()`** family of functions (e.g., **`execlp()`**) replaces the current process image with a new one. This is useful for running external programs or commands.
-
-### 3. **wait()**
-The **`wait()`** system call allows the parent process to wait until its child process terminates. This ensures that the parent can handle the child process’s termination status.
-
-## Code Example
-
-Here is an example of a C++ program that demonstrates **`fork()`**, **`exec()`**, and **`wait()`** system calls. The program first creates a child process to run the `ls` command, and after it completes, the parent process creates another child process to run the `pwd` command.
+The following C++ code demonstrates how to create child processes, run external commands, and replace processes using `fork()`, `execlp()`, and `wait()`.
 
 ```cpp
 #include<iostream>
