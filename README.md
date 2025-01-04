@@ -16,6 +16,7 @@ This repository serves as a comprehensive guide to understanding and implementin
    - [Lifecycle of a Process](#lifecycle-of-a-process)
    - [Process Scheduling](#process-scheduling)
    - [Code Example](#process-scheduling-example)
+4. [CPU Scheduling](#cpu-scheduling)     
 
 
 
