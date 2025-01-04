@@ -16,12 +16,7 @@ This repository serves as a comprehensive guide to understanding and implementin
    - [Lifecycle of a Process](#lifecycle-of-a-process)
    - [Process Scheduling](#process-scheduling)
    - [Code Example](#process-scheduling-example)
-4. [Memory Management](#memory-management)
-5. [Concurrency](#concurrency)
-6. [File Systems](#file-systems)
-7. [Synchronization](#synchronization)
-8. [How to Run the Code](#how-to-run-the-code)
-9. [Contributing](#contributing)
+
 
 
 ---
@@ -179,56 +174,6 @@ int main() {
 
 ---
 
-## Memory Management
 
-**Coming Soon**: Detailed examples of memory allocation techniques such as paging, segmentation, and dynamic memory allocation.
-
----
-
-## Concurrency
-
-**Coming Soon**: Implementation of threads, synchronization primitives, and solutions to common concurrency issues.
-
----
-
-## File Systems
-
-**Coming Soon**: Simulations of file handling, directory structures, and file system management.
-
----
-
-## Synchronization
-
-**Coming Soon**: Demonstrations of semaphores, monitors, and other synchronization tools to resolve critical section problems.
-
----
-
-## How to Run the Code
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/applied-operating-system.git
-   cd applied-operating-system
-   ```
-
-2. Compile the C++ files:
-   ```bash
-   g++ -o process_management process_management.cpp
-   g++ -o round_robin round_robin.cpp
-   ```
-
-3. Run the executables:
-   ```bash
-   ./process_management
-   ./round_robin
-   ```
-
----
-
-## Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
----
 
 
